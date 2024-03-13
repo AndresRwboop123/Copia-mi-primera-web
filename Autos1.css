@@ -1,0 +1,621 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*--importante--*/
+
+}
+
+
+body{
+
+  font-family: "Madimi One", sans-serif;
+  margin: 0;
+  padding: 0;
+  
+  }
+
+
+ 
+header{
+    
+    display: flex;
+    background-color: rgb(16, 22, 11);
+    flex-direction :row;
+   
+    align-items: center;
+    justify-content:space-between;
+   
+
+}
+
+header nav ul.segunda{
+    display: flex;
+    flex-direction :row; 
+    justify-content: space-around;
+    gap: 1em;
+    
+
+}
+
+
+header nav {
+    display: flex;
+    flex-direction :row; 
+    justify-content:center;
+
+    flex-direction: row-reverse;
+    gap: 1em;
+    align-items: center;
+
+}
+
+header nav ul.segunda li {
+list-style: none;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav ul.segunda li a{
+    color: beige;
+}
+
+
+header  a i{ 
+    font-size: 2em ;
+    padding: 10px ;
+}
+
+
+
+
+
+
+#imagenmunstag{
+width: 300px;
+}
+
+main section.seccion-1{
+    background-color:rgba(233, 255, 198, 0.849);
+    padding: 20px;
+}
+
+main section div.arreglocentro{
+    margin: 10px;  
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+
+div.acerca-de{
+    font-size: 13.5px;
+    width: 400px;
+    height: 100px;
+    position: relative;
+    left: 30px;
+    top: 29px;
+    
+}
+
+
+
+
+
+
+main section.seccion-2{
+    background-color: black;
+    padding: 20px;
+}
+
+
+div.sector2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bosqueauto{
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main section.seccion-3{
+    background-color:rgba(229, 240, 229, 0.842);
+    padding: 80px;
+}
+
+main section div.arreglocentro-seccion-3{
+    margin: 10px;  
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 1px;
+    
+    
+}
+
+
+/*object-fit */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#llantaid{
+    width: 240px;
+    height:255px ;
+}
+
+.ss1parrafo{
+    
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 0.5px 1px 105px 12px;
+    width: 225px;
+    height: 130px;
+    position: relative;
+    top: 10px;
+} 
+
+div p.clleermas {
+    color: #73AD21;
+}
+
+
+#mecaid{
+    width: 260px;
+    height:255px ;
+    
+}
+
+.ss2parrafo{
+    
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 0.5px 1px 105px 12px;
+    width: 260px;
+    height: 130px;
+    position: relative;
+    top: 10px;
+   /* Align-items:baseline; */
+}
+
+
+
+
+.ss3parrafo{
+    
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 0.5px 1px 105px 12px;
+    width: 220px;
+    height: 130px;
+    position: relative;
+    top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- CSS para FORMULARIO---*/
+
+
+
+/*----- Encabezado Contacto---*/
+
+
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form-header{
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 10px;
+
+    width: 98%;
+    margin: 10px;
+    padding: 50px;
+}
+
+.form-header h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*----- Formulario ------*/
+
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 80px;
+    margin: 30px 0 40px 0;
+  }
+
+  /*----- Campos del Formulario ------*/
+
+  .form-row{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+
+.form-row input[type="text"],
+.form-row input[type="email"]
+{
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+
+/*--------
+ #nombre{
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+
+}
+---*/
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+  
+
+
+ .form-row textarea{
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #bdbdbd;  
+    border: 0;
+    border-radius: 6px;
+
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+    width: 100%;
+
+    }
+
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- redes hacemos-- */
+ 
+footer.reddes{
+    padding: 4px ;
+    background-color: rgb(16, 22, 11);
+    
+}
+
+footer.reddes div nav ul{
+    list-style: none;
+}
+
+footer.reddes div h3{
+    color: brown;
+}
+
+footer.reddes div nav ul li a{
+   color: beige;
+}
+
+.logomovible {
+    font-size: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+
+
+
+
+
+
+/* MENU*/
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+   /* display: none;*/
+}
+
+
+
+
+
+
+
+
+  /* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header {
+        background-color: #73AD21;
+       
+    }
+    
+    .checkbtn{
+        display: block;
+    }
+
+    /*
+    .segunda li{
+        display: none;
+    }
+    */
+
+
+    #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #89927c;
+        text-align: center;
+
+        top: 80px;
+        left: 100%;
+        transition:all 0.5s;
+    }
+
+
+    #check:checked ~ ul{
+        left: 0%;
+        top:10%;
+        display: block;
+    }
+
+    #encabezado nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn{
+        color: darkorange;
+    }
+
+
+
+
+   
+    main section div.arreglocentro {
+            display: flex;
+            flex-wrap:wrap;
+            margin-bottom: 40% ;
+
+    }
+
+    div.acerca-de{
+
+        font-size: 11.5px;
+        position:static;
+        width: 300px;
+    }
+
+
+
+
+
+    #imagenmunstag{
+        width: 200px;
+    }
+
+    main section.seccion-3 {
+       
+        padding: 50px;
+    }
+    
+    main section div.arreglocentro-seccion-3 {
+        margin: 10px;
+        display: flex; 
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+
+    .ss1parrafo {
+        font-size: 10px;
+        padding: 10px;
+        width: 200px;
+    }
+    
+
+    .s2{
+
+        position: relative;
+        top: 20px;
+    }
+
+    .ss2parrafo {
+        font-size: 10px;
+        padding: 10px;
+        width: 200px;
+    }
+
+    .ss3parrafo {
+        font-size: 10px;
+        padding: 10px;
+        width: 200px;
+    }
+    .s3{
+
+        position: relative;
+        top: 40px;
+    }
+
+  }
+
+
+  
+
+/*----- pantalla resolucion PARA FORMULARIO ------*/
+@media (min-width: 700px){
+    .form-header{
+        padding: 50px;
+        
+
+    }
+
+
+    .form-row{
+        flex-direction:row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        margin-left: 180px;
+    }
+  
+
+     .form-row input[type="email"]
+    ,.form-row input[type="text"]{
+     width: 250px;
+     height: initial;
+    
+    }
+
+    .form-row label{
+        text-align: right;
+        width: 120px;
+        margin-right: 7px;
+        padding-right: 20px;
+        
+    }
+
+
+    .form-row textarea{
+        width: 250px;
+    }
+ 
+.form-row button{
+  margin-left: 180px;
+    
+}
+
+
+}
+
+
+
+
