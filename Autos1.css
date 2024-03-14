@@ -13,6 +13,8 @@ body{
   font-family: "Madimi One", sans-serif;
   margin: 0;
   padding: 0;
+  /*--background-color: #262922;--*/
+  background-image: url("images/playa.jpg");
   
   }
 
@@ -20,15 +22,92 @@ body{
  
 header{
     
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+
+
+
+
+
+
+
+
+/* HEADER SE MUEVE TODO EN FIJO PERO CAMBIA COLOR  */
+
+nav.nav{
+
+    position: fixed;
+    width: 100%;
+     /* background-color: rgb(16, 22, 11);*/
+     background: linear-gradient(to right, rgba(15, 12, 41, .7), rgba(48, 43, 99, .7), rgba(158, 39, 128, 0.7));
+     backdrop-filter: sepia(80%);
+
     display: flex;
-    background-color: rgb(16, 22, 11);
     flex-direction :row;
    
     align-items: center;
     justify-content:space-between;
-   
-
+    padding: 1px;
+    transition: all 0-5s ease;
 }
+
+nav.active{
+    /* background-color:  rgb(253, 253, 253);*/
+   
+    backdrop-filter: blur(30px);
+   
+    padding: 0px;
+
+    background: linear-gradient(to right, rgba(15, 12, 41, .7), rgba(48, 43, 99, .7), rgb(44 44 187 / 70%));
+    z-index: 100; /*importante para sobreponer texto e imagenes la barra de menu predomine */
+}
+
+
+/*
+
+
+nav.active i{
+    
+}
+*/
+
+
+
+nav.active  ul.segunda a{
+    color: #b3d8fc;
+}
+
+nav.active .checkbtn {
+    color:#b3d8fc;
+}
+
+
+.scrol{
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 header nav ul.segunda{
     display: flex;
@@ -41,6 +120,8 @@ header nav ul.segunda{
 
 
 header nav {
+
+    
     display: flex;
     flex-direction :row; 
     justify-content:center;
@@ -63,6 +144,17 @@ a {
 
 header nav ul.segunda li a{
     color: beige;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all;
+}
+
+
+header nav ul.segunda li a:hover{
+    padding: 5px 10px;
+    background-color: beige;
+    color: #262922;
+    border-radius: 15px;
 }
 
 
@@ -76,41 +168,165 @@ header  a i{
 
 
 
+
+
+
+
 #imagenmunstag{
-width: 300px;
+width: 400px;
+position: relative;
+top:60px;
+right: 80px;
 }
 
+/*ANIMACION PARA EL CARRO MORADO
+ */
+
+.acerca-imagen{
+    float: left;
+    animation: movimiento 2.5s linear infinite;
+}
+
+
+.acerca-imagen{
+    display: block;
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translatex(40px);
+    }
+
+    100%{
+        transform: translateX(0);
+
+    }
+
+
+}
+
+
+
+
+
+
 main section.seccion-1{
-    background-color:rgba(233, 255, 198, 0.849);
+    /*background-color:rgba(233, 255, 198, 0.849); */
     padding: 20px;
+    
 }
 
 main section div.arreglocentro{
-    margin: 10px;  
+    margin: 1px;  
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
     
 }
 
+
+
+
+
+
+
 div.acerca-de{
-    font-size: 13.5px;
-    width: 400px;
-    height: 100px;
+
+    color: #f6f7f8;
+    font-size: 23px;
+    width: 500px;
+    height: 400px;
     position: relative;
-    left: 30px;
-    top: 29px;
+    left: 150px;
+    top: 50px;
+    
     
 }
 
 
+div.acerca-de #subti {
 
+    font-size: 45px;
+
+       
+}
+
+div.acerca-de .animadotext span{
+ position: relative;
+
+}
+
+div.acerca-de .animadotext span::before{
+    content: "Mustang 2020" ;
+    color: rgba(255, 0, 200, 0.856);
+    animation: words 20s infinite;
+   
+   }
+
+   div.acerca-de .animadotext span::after{
+    content: "" ;
+    position: absolute;
+    width: calc(100%+8px);
+    height: 100%;
+    background-color: rgba(6, 5, 12, 0.7);
+    border-left: 2px solid  rgba(252, 109, 221, 0.856) ;
+    right: -8px;
+   animation: cursor .8s infinite, typing 20s  steps(14) infinite;
+   }
+
+   @keyframes cursor{
+    to{
+        border-left: 2px solid  rgba(6, 5, 12, 0.7);
+    }
+   }
+
+
+   @keyframes words{
+
+    0%,20%{
+        content: "Ferrari";
+    }
+    21%,40%{
+        content: "Jester";
+    }
+    41%,60%{
+        content: "Lamborgini";
+        
+    }
+    61%,80%{
+        content: "Sulta Rx";
+    }
+    81%,100%{
+        content: "GT razor";
+    }
+   }
+
+
+@keyframes typing{
+
+    10%,15%,30%,35%,50%,55%,70%,90%,95%{
+        width: 0;
+    }
+
+    5%,20%,30%,40%,60%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
 
 
 
 main section.seccion-2{
-    background-color: black;
-    padding: 20px;
+   /* background-image: url("images/playa.jpeg");*/
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top:  60px ;
+    padding: 40px ;
+    
 }
 
 
@@ -443,6 +659,7 @@ footer.reddes div nav ul li a{
     margin-right: 40px;
     cursor: pointer;
    /* display: none;*/
+   
 }
 
 
@@ -462,6 +679,7 @@ footer.reddes div nav ul li a{
     
     .checkbtn{
         display: block;
+        
     }
 
     /*
@@ -481,13 +699,17 @@ footer.reddes div nav ul li a{
         top: 80px;
         left: 100%;
         transition:all 0.5s;
+        
+        
     }
 
+  
 
     #check:checked ~ ul{
         left: 0%;
         top:10%;
         display: block;
+        
     }
 
     #encabezado nav ul li{
@@ -505,6 +727,16 @@ footer.reddes div nav ul li a{
     }
 
 
+    div.acerca-imagen{
+        position: relative; /*importanteeeeeeee */
+        z-index: -1;
+    }
+
+    div.animadotext{
+        position: relative; /*importanteeeeeeee */
+        z-index: -1;
+    }
+    
 
 
    
