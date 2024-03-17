@@ -116,36 +116,58 @@
 
 
       <section class="seccion-3">
+        <div> <p class ="parrafo">Servicios</p></div>
 
         <div class="arreglocentro-seccion-3">  
 
-                 <div class="s1">
-                    <div class="ss1imagen"> 
-                         <img src="llantas.jpeg" alt="llant" id="llantaid"/>
+                 <div class="card">
+                  
+                    <div class="face front"> 
+                         <img src="llant.jpg" alt="llant" id="llantaid"/>
+                         <h3 >Articulos</h3>
                     </div>
-                    <div class="ss1parrafo"> 
-                        <h4 class="ss1sub">Las mejores articculos de la ciudad de Lima</h4>
+
+                    <div class="face back"> 
+                        <h3>Articulos</h3>
                          <p> Aprenderas de articulos usaras para tu dia a dia o si quieres una producto para un lado mas salvaje entre las montañas o las carreteras largas en las noches  </p> 
-                         <p class="clleermas">Leer mas [+]</p>
+                         
+                         <div class="link">
+                            <a href="#">Leer mas [+]</a>
+                         </div>
                     </div>
                  </div>
 
-                 <div class="s2">
-                    <div class="ss2imagen"> <img src="mecanico.jpeg" alt="meca" id="mecaid"/> </div>
-                    <div class="ss2parrafo">
-                        <h4 class="ss2sub">la mejores mecanicos de Lima y Callao</h4>
-                         <p>No todo es coches sino tambien encontraras en los lugares donde podras darle a tu auto el mejor mantenimiento posible que necesite con los expertos mas calificados</p> 
-                         <p class="clleermas">Leer mas [+]</p>
-                        </div>    
+                 <div class="card">
+
+                    <div class="face front">
+                       <img src="mecanicos.jpg" alt="meca" id="mecaid"/>
+                       <h3>Reparaciones</h3>
                     </div>
 
+                    <div class="face back">
+                           <h3>Reparaciones</h3>
+                           <p>No todo es coches sino tambien encontraras en los lugares donde podras darle a tu auto el mejor mantenimiento posible que necesite con los expertos mas calificados</p> 
+                        
+                           <div class="link">
+                            <a href="#">Leer mas [+]</a>
+                          </div>
+                      </div>    
+                  </div>
 
-                 <div class="s3">
-                     <div class="ss3imagen"> <img src="https://eksmotorsports.com/wp-content/uploads/2019/11/20190921-PCCA-Singapore-MG-1529_small-thegem-post-thumb-large.jpeg"  alt="pil" id="pilosid"/></div>
-                     <div class="ss3parrafo">
-                        <h4 class="ss2sub">lla mejores pilotos del pais referentes de la ciudad</h4>
+
+                 <div class="card">
+
+                     <div class="face front"> 
+                      <img src="pilotos.jpg"  alt="pil" id="pilosid"/>
+                      <h3 >Pilotos</h3>
+                      </div>
+
+                     <div class="face back">
+                        <h3>Pilotos</h3>
                          <p> Conoce las últimas noticias tanto corredores del día asi como en la noche, no te pierdas estos reportajes que de seguro te van a encantar</p> 
-                         <p class="clleermas">Leer mas [+]</p>
+                          <div class="link">
+                            <a href="#">Leer mas [+]</a>
+                          </div>
                     </div>   
                  </div>    
         </div>        
@@ -159,22 +181,20 @@
 
       </section>
       
-      <div class="greeting">MODIFICANO</div>
+      <!--<div class="greeting">MODIFICANO</div>-->
    
      </main>  
    
      
     
- <footer class="form-header">
-    <div class="titulocentro" >
-       <h3>Contacto</h3> 
-    </div>
+   <footer class="form-header">
+            <div class="titulocentro" >
+               <h3>Contacto</h3> 
+            </div>
 
-    <div class="subtitulo">
-        <p>¡Esperemos tu consulta!</p>
-    </div>
-
-
+            <div class="subtitulo">
+                <p>¡Esperemos tu consulta!</p>
+            </div>
 
 
 
@@ -183,51 +203,163 @@
 
 
 
-    <form action="" method="get" class="formulario"  id="form">
-        <div >
-            <div class="form-row">
-          <!--campo para nombre-->
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" />
-        </div>
 
-        <div class="form-row">
-          <!--campo para correo-->
-          <label for="email">correo electronico:</label>        
-          <input type="email" id="email" name="email" placeholder="pepe@gmail.gmail.com" required />
-        </div>
-        
-        <div class="form-row">  
-          <!--campo para mensaje-->
-          <label for="mensaje">Mensaje:</label>        
-          <textarea type="mensaje" name="mensaje"></textarea>
-        </div>
 
-        <div class="form-row">
-           <!--campo para seleccion de pais-->
-           <label for="pais">Pais:</label>
-           <select name="pais" id="pais">
-              <option value="argentina">Argentina</option>   
-              <option value="chile">Chile</option>
-              <option value="mexico">Mexico</option>
-              <option value="peru">Peru</option>
+            <form action="" method="get" class="formulario"  id="form">
+
         
 
+                <div >
+                  <div class="form-row">
+                  <!--campo para nombre-->
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" />
+                </div>
 
-            </select>
+                <div class="form-row">
+                  <!--campo para correo-->
+                  <label for="email">correo electronico:</label>        
+                  <input type="email" id="email" name="email" placeholder="pepe@gmail.gmail.com" required />
+                </div>
+                
+                <div class="form-row">  
+                  <!--campo para mensaje-->
+                  <label for="mensaje">Mensaje:</label>        
+                  <textarea type="mensaje" name="mensaje"></textarea>
+                </div>
+
+                <div class="form-row">
+                   <!--campo para seleccion de pais-->
+                   <label for="pais">Pais:</label>
+                   <select name="pais" id="pais">
+                      <option value="argentina">Argentina</option>   
+                      <option value="chile">Chile</option>
+                      <option value="mexico">Mexico</option>
+                      <option value="peru">Peru</option>
+                
+
+
+                    </select>
+                </div>
+               <!--campo para e
+                nvio-->
+
+               <div class="form-row">
+                    <button type="submit">Enviar</button>
+               </div>
+               <p class="alertas" id="alertas"></p>
+
+
+            </form>
+
+      </footer>
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+      
+      <footer class="patrocinadores">
+
+        
+
+        <div class="slider">  
+            <div class="slide-track">
+    
+    
+                <div class="slide">
+                    <img src="images/2021.png" alt="" >
+                </div>
+    
+                <div class="slide">
+                    <img src="images/dhl.png" alt="" >
+                </div>
+    
+                <div class="slide">
+                    <img src="images/minutos.png" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="images/MOTOROLA.png" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="images/pollos.png" alt="" class="pollos">
+                </div>
+    
+                <div class="slide">
+                    <img src="images/nike.png" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="images/redpack.png" alt="">
+                </div>
+    
+    
+    
+             
+                
+                <div class="slide">
+                    <img src="images/2021.png" alt="" >
+                </div>
+    
+                <div class="slide">
+                    <img src="images/dhl.png" alt="" >
+                </div>
+    
+                <div class="slide">
+                    <img src="images/minutos.png" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="images/MOTOROLA.png" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="images/pollos.png" alt="" class="pollos">
+                </div>
+    
+                <div class="slide">
+                    <img src="images/nike.png" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="images/redpack.png" alt="">
+                </div>
+    
+    
+    
+    
+                
+            </div>
+                
         </div>
-       <!--campo para e
-        nvio-->
-
-       <div class="form-row">
-            <button type="submit">Enviar</button>
-       </div>
-       <p class="alertas" id="alertas"></p>
-
-
-    </form>
-
+    
+    
+    
+    
+    
+    
     </footer>
+    
+
+
+
+
+
+
 
 
 
@@ -258,6 +390,9 @@
               <a href="https://app.egg.live/home"> <i class="fa-solid fa-truck-monster" style="color: #690e0e;"></i>     
               </a>
             </div>
+
+
+
 
      </footer>
     </div>
