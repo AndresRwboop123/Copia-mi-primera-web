@@ -1121,12 +1121,25 @@ div.slidec2-track{
 
 @keyframes scroll2{
   0% {
+      opacity: 0.2;
        -webkit-transform: translateY(0);
        transform: translateY(0);
   } 
 
 
+  15% {
+    opacity: 0.7;
+  
+} 
+
+
+50% {
+  opacity: 0.9;
+
+} 
+
   100% {
+    opacity: 1;
    -webkit-transform: translateY(calc(-100px * 7));
    transform: translateY(calc(-100px * 7));
 } 
@@ -1150,7 +1163,71 @@ div.slidec2-track{
 
 
 
+/*----- pantalla resolucion PARA sector 5 galeria de imagens ------*/
 
+section.seccion-6{
+  
+  
+  background-color: #ffffff  ;
+  background: radial-gradient(ellipse at bottom, rgb(27, 23, 27) 0%, #090a0f 100%);
+  
+ 
+
+  
+}
+
+
+.subtitulogal{
+  
+
+  background-color: #ffffff  ;
+  background: radial-gradient(ellipse at bottom, rgb(27, 23, 27) 0%, #090a0f 100%);
+  
+  padding: 90px;
+
+}
+
+
+section.seccion-6 div h1{
+  color: rgb(255, 255, 255);
+  text-align: center;
+    font-size: 30px;
+ 
+
+}
+
+div.imagenesseccion6{
+  columns: 3;
+  padding: 16px 32px;
+  column-gap: 32px;
+}
+
+
+section.seccion-6 img{
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+
+
+  animation: reveal linear both;
+  animation-timeline:  view();
+  animation-range: entry 20% cover 40%;
+}
+
+@keyframes reveal{
+  from{
+    opacity: 0;
+    translate: 0 100px;
+
+  }
+
+  to{
+    opacity: 1;
+    translate: 0 0;
+  }
+
+}
 
 
 
@@ -1221,6 +1298,7 @@ div.slidec2-track{
 
 
 footer.form-header{
+
     display:flex;
     flex-direction: column;
     align-items: center;
